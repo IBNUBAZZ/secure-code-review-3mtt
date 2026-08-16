@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome, {{ username }}</h1>
+    <p>You have successfully authenticated in the local lab.</p>
+    <form method="post" action="/logout">
+      <button type="submit">Log out</button>
+    </form>
+  </main>
+</body>
+</html>
